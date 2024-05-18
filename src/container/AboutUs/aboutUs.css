@@ -1,0 +1,77 @@
+.app__aboutus {
+    position: relative;
+}
+
+.app__aboutus_underlay-image {
+    position: absolute;
+}
+
+.app__aboutus_underlay-image img {
+    width: 391px;
+    height: 415px;
+}
+
+.app__aboutus-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.app__aboutus-content-image {
+    margin: 2rem 4rem;
+}
+
+.app__aboutus-content-image img {
+    height: 910px;
+}
+
+.app__aboutus-content-left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+}
+
+.app__aboutus-content-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.app__aboutus-content-left p,
+.app__aboutus-content-right p {
+    margin: 2rem 0;
+    color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__aboutus-content-image img {
+        height: 1110px;
+    }
+
+    .app__aboutus-content-left p,
+    .app__aboutus-content-right p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app__aboutus-content{
+        flex-direction: column;
+    }
+
+    .app__aboutus-content-image {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__aboutus_underlay-image img {
+        width: 100%;
+        height: 350px;
+    }
+}

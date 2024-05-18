@@ -1,0 +1,25 @@
+.app__findus {
+    align-items: flex-start;
+}
+.app__findus-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.app__findus-content p {
+    margin: 0;
+}
+.app__findus-content h2 {
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.app__findus-content .app__findus-openingTime {
+    color: var(--color-golden);
+    margin: 2rem 0;
+}
+
+.app__findus-content button {
+    margin-top: 1.5rem;
+}

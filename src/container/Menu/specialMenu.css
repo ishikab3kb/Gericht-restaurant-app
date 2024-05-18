@@ -1,0 +1,107 @@
+.app__menu {
+    background: var(--color-black);
+    flex-direction: column;
+}
+
+.app__menu .app__subheading {
+    text-align: center;
+}
+
+.app__menu h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.app__menu-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.app__menu-items .app__menuitem {
+    width: 100%;
+}
+
+.app__menu-items-image {
+    width: 410px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 2rem;
+}
+
+.app__menu-items-image img {
+    width: 100%;
+    height: auto;
+}
+
+.app__menu-items-wine-beer, .app__menu-items-cocktails {
+    flex: 1;
+    flex-direction: column;
+}
+
+.app__menu-items-wine-beer-itemlist {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.app__menu-items-wine-beer h2,
+.app__menu-items-cocktails h2 {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    text-align: center;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__menu-items-image {
+        width: 650px;
+    }
+
+    .app__menu-items-image img {
+        height: 920px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__menu-items {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app__menu-items-wine-beer, .app__menu-items-cocktails {
+        width: 100%;
+    }
+
+    .app__menu-items-image {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__menu-items-image {
+        width: 100%;
+    }
+
+    .app__menu h1 {
+        font-size: 35px;
+        line-height: 48.5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__menu h1 {
+        font-size: 45px;
+        line-height: 70px;
+    }
+}

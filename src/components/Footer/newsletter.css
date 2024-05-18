@@ -1,0 +1,77 @@
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--color-black);
+    padding: 2rem 4rem;
+    border: 1px solid var(--color-golden);
+    /* margin: 0 auto; */
+    margin-top: 3rem;
+}
+
+.newsletter h2 {
+    text-align: center;
+}
+
+.newsletter .app__subheading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.details input {
+    width: 620px;
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+    margin-right: 2rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-black);
+}
+
+.details button {
+    width: max-content;
+}
+
+@media screen and (min-width: 2000px) {
+    .details input {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .details input {
+        margin: 0 0 2rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .newsletter {
+        padding: 2rem 0;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .newsletter h2 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
