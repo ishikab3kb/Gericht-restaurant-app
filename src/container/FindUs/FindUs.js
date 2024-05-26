@@ -1,7 +1,7 @@
 import React from 'react'
 import { SubHeading } from '../../components'
-import images from '../../constants/images'
 import './findUs.css'
+import { findus } from '../../constants/images'
 
 const FindUs = () => {
   return (
@@ -16,7 +16,7 @@ const FindUs = () => {
         <button className='custom__button'>Visit Us</button>
       </div>
       <div className='app__wrapper_img'>
-        <img src={images.findus} alt='findus'></img>
+        <img src={findus} alt='findus'></img>
       </div>
     </div>
   )

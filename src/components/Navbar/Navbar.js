@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import images from '../../constants/images'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import './navbar.css'
+import { gericht } from '../../constants/images'
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.gericht} alt='gericht'></img>
+        <img src={gericht} alt='gericht'></img>
       </div>
       <div className='app__navbar-links'>
         <ul>

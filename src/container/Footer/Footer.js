@@ -1,8 +1,8 @@
 import React from 'react'
-import images from '../../constants/images'
 import { FooterOverlay, Newsletter, SubHeading } from '../../components'
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 import './footer.css'
+import { gericht } from '../../constants/images';
 
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
           <p className='p__opensans'>+1 212-555-1230</p>
         </div>
         <div className='app__footer-name'>
-          <img src={images.gericht} alt='gericht'></img>
+          <img src={gericht} alt='gericht'></img>
           <SubHeading title='"The Best Way To Find Yourself Is To Lose Yourself In The Service Of Others."'></SubHeading>
           <div className='app__footer-socialmedia'>
             <FiFacebook className='icon'></FiFacebook>

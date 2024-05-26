@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
 import SubHeading from '../../components/SubHeading/SubHeading'
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-import images from '../../constants/images'
+import { gallery01, gallery02, gallery03, gallery04 } from '../../constants/images'
 import './gallery.css'
 
 
 const Gallery = () => {
 
-  const gallery_img = [images.gallery01, images.gallery02, images.gallery03, images.gallery04];
+  const gallery_img = [gallery01,gallery02,gallery03,gallery04];
 
   const scrollref = useRef(null);
 
