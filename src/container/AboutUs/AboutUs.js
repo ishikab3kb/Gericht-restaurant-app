@@ -1,7 +1,7 @@
 import React from 'react'
 import images from '../../constants/images'
 import './aboutUs.css'
-import { SubHeading } from '../../components'
+// import { SubHeading } from '../../components'
 
 const AboutUs = () => {
   return (
